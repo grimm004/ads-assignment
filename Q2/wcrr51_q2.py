@@ -13,7 +13,7 @@ def is_ephemeral(n, k, ephemerals):
         if ephemerals[n] != 0:
             if ephemerals[n] == -1: return False
             elif ephemerals[n] == 1: return True
-        
+
         children.append(n)
         n = next_child(n, k)
 
