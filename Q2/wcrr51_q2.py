@@ -1,5 +1,5 @@
 def count_ephemeral(n1, n2, k):
-    ephemerals = [0 for _ in range(10000001)]
+    ephemerals = [0 for _ in range(10000000)]
     ephemeral_count = 0
     for n in range(n1, n2):
         if is_ephemeral(n, k, ephemerals):

@@ -52,4 +52,10 @@ def is_sorted(a):
     return True
 
 if __name__ == '__main__':
-    print(hybrid_sort([5, 6, 4, 7, 3, 8, 2, 9, 1, 0]))
+    #print(hybrid_sort([5, 6, 4, 7, 3, 8, 2, 9, 1, 0]))
+    from random import randint
+    while True:
+        a = [randint(0, 1000) for i in range(randint(100, 10000))]
+        b = hybrid_sort(a)
+        print(b)
+        print(len(a), len(b), len(a) == len(b), is_sorted(b))
