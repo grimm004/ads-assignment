@@ -117,5 +117,5 @@ def good_expression(expression):
 
 
 if __name__ == '__main__':
-    #print(good_expression("(1*2*3+4*5*(6*7+4*(3*2+1))*(8+9))*2"))
-    print(good_expression("(a+b)*(c*d)"))
+    print(good_expression("(1*2*3+4*5*(6*7+4*(3*2+1))*(8+9))*2"))
+    #print(good_expression("(a+b)*(c*d)"))
