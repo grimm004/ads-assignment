@@ -84,10 +84,22 @@ def is_sorted(a):
     return True
 
 if __name__ == '__main__':
-    print(hybrid_sort([5, 6, 4, 7, 3, 8, 2, 9, 1, 0]))
-    #from random import randint
-    #while True:
-        #a = [randint(0, 1000) for i in range(randint(100, 10000))]
-        #b = hybrid_sort(a)
-        #print(b)
-        #print(len(a), len(b), len(a) == len(b), is_sorted(b))
+    print(hybrid_sort([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+    """
+    from itertools import permutations
+    max_c = 0
+    permutation_ = []
+    t = 0
+    l = []
+    for i in range(11):
+        for permutation in permutations(l):
+            c = 0
+            hybrid_sort(list(permutation))
+            if c > max_c:
+                max_c = c
+                permutation_ = permutation
+            t += 1
+        l.append(i + 1)
+
+        print(i, max_c, list(permutation_))
+    """
