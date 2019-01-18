@@ -6,7 +6,7 @@ import time
 
 def q2test():
     """tests for the function count_ephemeral"""
-    """
+    
     correct = True
     time0 = time.time()
     result = count_ephemeral(1, 10, 2)
@@ -36,8 +36,6 @@ def q2test():
         print("test passed for for n1=123456, n2=654321, k=4 in", time1 - time0, "seconds.")
     if correct:
         print("all tests passed")
-    """
-
     
     time0 = time.time()
     result = count_ephemeral(1, 10000000, 2)

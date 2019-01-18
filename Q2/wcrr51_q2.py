@@ -21,16 +21,14 @@ def is_ephemeral(n, k, ephemerals, eternals):
     while True:
         # If current n is 1 or it is already in the ephemeral set
         if n == 1 or n in ephemerals:
-            # Loop through each k-child and add it to the ephemerals set
-            for child in children:
-                ephemerals.add(child)
+            # Place the k-children in the k-ephemerals set
+            ephemerals |= children
             # Return true (n is ephemeral)
             return True
         # If current n is already in the children or eternals set
         if n in children or n in eternals:
-            # Loop through each k-child and add it to the eternals set
-            for child in children:
-                eternals.add(child)
+            # Place the k-children in the k-eternals set
+            eternals |= children
             # Return false (n is eternal / not ephemeral)
             return False
 
